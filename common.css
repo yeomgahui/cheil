@@ -1,0 +1,146 @@
+body {
+  font-family: "NanumSquareNeo", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕",
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.8px;
+  font-size: 22.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Paperozi";
+  line-height: 96px;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-extra-bold {
+  font-weight: 800;
+}
+
+.fc-accent {
+  color: #26b99a;
+}
+
+.bg-primary {
+  background-color: #faf8f4;
+}
+
+.grid-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px; /* 카드 간격 */
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 95px 250px;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  color: #414143;
+}
+
+.info-list .info-head {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.info-list .info-head .info-title {
+  display: flex;
+  align-items: center;
+}
+
+.info-list .info-head .dot {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: url("./assets/images/cheil_thunder.png") no-repeat center /
+    contain;
+  border-radius: 0;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.info-list .info-body {
+  font-size: 22.5px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+.info-list .info-body .info-bullets {
+  list-style-type: disc;
+  list-style-position: inside;
+  line-height: 40px;
+}
+
+.info-list .info-body .info-desc {
+  padding-left: 50px;
+}
+
+/* dotted box */
+.dotted-box {
+  position: relative;
+  border: 2px dotted #26b99a;
+  padding: 40px 40px 30px 40px;
+  margin-top: 40px;
+}
+
+.dotted-box .sub-title {
+  font-size: 24px;
+  line-height: 53px;
+  font-weight: 800;
+  color: #323f4d;
+}
+
+.dotted-box-badge {
+  position: absolute;
+  font-size: 24px;
+  line-height: 48px;
+  font-weight: 800;
+  top: -25px;
+  left: 40px;
+  background-color: #26b99a;
+  color: #fff;
+  padding: 0 10px;
+}
+
+/*  */
+.hero {
+  background-color: #faf8f4;
+  max-height: 325px;
+  padding: 50px 120px;
+  display: flex;
+}
+
+.hero-image {
+  border-radius: 50%;
+  width: 189px;
+  height: 189px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 134px;
+  height: 134px;
+  object-fit: contain;
+}
+
+.hero-headline {
+  border-radius: 50%;
+  width: 239px;
+}

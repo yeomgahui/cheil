@@ -1,0 +1,54 @@
+.rsp-benefit-01 .dotted-box-content-top {
+  padding: 23px 60px 20px 60px;
+}
+
+.rsp-benefit-01 .dotted-box-content-bottom {
+  padding: 23px 60px 30px 60px;
+  background-color: #faf8f4;
+}
+
+.rsp-benefit-01 .accent {
+  padding-left: 15px;
+}
+/* rsp-benefit-01 카드에 한해 바깥 상자 기본 padding 제거 */
+.dotted-box.rsp-benefit-01 {
+  padding: 40px 0 0 0 !important;
+}
+
+/*  */
+.document-groups {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.document-group {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+}
+
+.document-media {
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 110px;
+  text-align: center;
+}
+
+.document-media-sub-image {
+  position: absolute;
+  left: 25%;
+  top: 45%;
+}
+.document-medio-title-order {
+  margin-bottom: 10px;
+}
+
+.document-media-title {
+  font-weight: 900;
+  font-size: 32px;
+  left: 25%;
+  top: 15%;
+  color: #fff;
+  position: absolute;
+}
