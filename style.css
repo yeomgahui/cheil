@@ -25,7 +25,7 @@
 .document-group {
   display: flex;
   flex-direction: row;
-  gap: 35px;
+  gap: 40px;
 }
 
 .document-media {
