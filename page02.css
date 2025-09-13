@@ -202,8 +202,14 @@
   color: #414143;
 }
 
-.detail-box .txt-list-box-t {
+.detail-box .txt-list-box-t,
+.detail-box .txt-list-box-t ul {
   padding-left: 44px;
+}
+
+.txt-list-box-t.list-bullet {
+  list-style-type: "ㆍ";
+  list-style-position: outside;
 }
 
 .detail-box .txt-list-box-t .desc {
@@ -340,7 +346,7 @@
   height: 100%;
   background-color: #ffffff;
   flex: 1;
-  padding-bottom: 24px;
+  padding-bottom: 33px;
 }
 
 .box .box-detail-01_bottom-highlight {
@@ -368,6 +374,34 @@
   height: 100%;
   flex: 1;
   background-color: #faf8f4;
+}
+
+/* box-detail-01: 요소는 박스 내부에서만 보이도록 하고, 타이틀 공간을 확보 */
+.box.box-detail-01 {
+  padding-top: 40px;
+  overflow: hidden;
+}
+
+/* box-detail-01 레이아웃 래퍼를 컬럼 플렉스로 지정하여 top/bottom이 위아래로 꽉 차도록 */
+.box.box-detail-01 > div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 타이틀을 박스 내부 상단에 배치 */
+.box.box-detail-01 .box-title {
+  top: 0;
+  transform: none;
+}
+
+/* 상단 영역 첫 문단 위여백 제거로 박스 상단과 밀착 */
+.box .box-detail-01_top p:first-child {
+  margin-top: 0;
+}
+
+/* 하단 영역 하여백 제거로 박스 하단과 밀착 */
+.box .box-detail-01_bottom {
+  padding-bottom: 0;
 }
 
 .timeline-grid {
