@@ -125,15 +125,15 @@
 
 /* position-02: absolute 없이 미세 좌측 이동 */
 .feature-item.position-02 {
-  transform: translateX(-5.6px);
+  transform: translateX(-6.5px);
 }
 
 .feature-item.position-03 {
-  transform: translateX(-8.9px);
+  transform: translateX(-10.5px);
 }
 
 .feature-item.position-04 {
-  transform: translateX(-16px);
+  transform: translateX(-17px);
 }
 
 .feature-image .image-background-01 {
@@ -217,7 +217,6 @@
   font-size: 22.667px;
   /* line-height: 1.8; */
   /* letter-spacing: -0.01em; */
-
   font-weight: 900;
   color: #414143;
 }
@@ -280,27 +279,14 @@
 }
 
 /* page_02 */
-
-.rsp-benefit .sub-title {
-  font-size: 24px;
-}
-
-.rsp-benefit .benefit-note {
-  color: #414143;
-}
 .rsp-benefit-01,
 .rsp-benefit-02,
 .rsp-benefit-03,
 .rsp-benefit-04 {
-  padding: 0 15px !important;
-  min-height: 254px;
-  height: auto;
+  padding: 0 !important;
+  height: 254px;
   width: 669px;
-  white-space: normal;
-  word-break: keep-all;
-  overflow-wrap: anywhere;
-  display: flex;
-  flex-direction: column;
+  white-space: nowrap;
 }
 
 .rsp-benefit-01 .dotted-box-content-top {
@@ -310,21 +296,7 @@
 .rsp-benefit-01 .dotted-box-content-bottom {
   padding: 25px 86px 37px 55px;
   background-color: #faf8f4;
-  height: auto;
-  margin-top: auto;
-}
-
-/* dotted-box 내부 레이아웃: 상단/하단 블록 분리 및 하단 고정 */
-.rsp-benefit-01 .dotted-box-content {
-  display: grid;
-  grid-template-rows: 1fr auto;
-  min-height: 100%;
-}
-
-.rsp-benefit-01 .dotted-box-content-top {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  height: 100%;
 }
 
 .rsp-benefit-01 .benefit-highlight {
@@ -355,171 +327,23 @@
 
 /*  */
 
-.process {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.process-item {
-  margin-top: 0;
-  position: relative;
-}
-
-.process-item .process-media .process-media-image {
-  position: absolute;
-  left: 50%;
-  top: 19%;
-  transform: translate(-50%, -50%);
-  object-fit: contain;
-}
-
-.process-item.item-05 .process-media .process-media-image {
-  position: absolute;
-  left: 47%;
-  top: 17%;
-  transform: translate(-50%, -50%);
-  object-fit: contain;
-}
-
-.process-item.item-06 .process-media .process-media-image {
-  position: absolute;
-  left: 47%;
-  top: 17%;
-  transform: translate(-50%, -50%);
-  object-fit: contain;
-}
-
-/* .process-item.reverse .process-media .process-media-image {
-  position: absolute;
-  left: 50%;
-  top: 62%;
-  transform: translate(-50%, -50%);
-  object-fit: contain;
-} */
-
-.process-item.reverse.item-02 .process-media .process-media-image {
-  position: absolute;
-  left: 50%;
-  top: 73%;
-  transform: translate(-50%, -50%);
-  object-fit: contain;
-}
-
-.process-item.reverse.item-04 .process-media .process-media-image {
-  position: absolute;
-  left: 50%;
-  top: 83%;
-  transform: translate(-50%, -50%);
-  object-fit: contain;
-}
-
-.process-item.reverse.item-06 .process-media .process-media-image {
-  position: absolute;
-  left: 50%;
-  top: 84%;
-  transform: translate(-50%, -50%);
-  object-fit: contain;
-}
-
-.process-inner-row {
+.timeline-grid {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  gap: 25px;
 }
 
-.process-media .process-media-background-01 {
-  background: url("./assets/images/rps_hexa_sky.png") no-repeat center / contain;
-  width: 340px;
-  height: 385px;
-}
-
-.process-media .process-media-background-02 {
-  background: url("./assets/images/rps_hexa_blue.png") no-repeat center /
-    contain;
-  width: 340px;
-  height: 385px;
-}
-
-.process-media .process-media-background-03 {
-  background: url("./assets/images/rps_hexa_sky.png") no-repeat center / contain;
-  width: 340px;
-  height: 385px;
-}
-
-.process-item.item-02 {
-  transform: translateX(-7px) translateY(-115px);
-}
-
-.process-item.item-03 {
-  transform: translateX(-19px) translateY(7px);
-}
-
-.process-item.item-04 {
-  transform: translateX(-25px) translateY(-115px);
-}
-
-.process-item.item-06 {
-  transform: translateX(-12px) translateY(-115px);
-}
-
-.process-item.item-07 {
-  transform: translateX(-17px) translateY(35px);
-}
-
-.process-media .process-media-background-04 {
-  background: url("./assets/images/rps_hexa_navy.png") no-repeat center /
-    contain;
-  width: 340px;
-  height: 385px;
-}
-
-.process-media .process-media-background-05 {
-  background: url("./assets/images/rps_hexa_sky.png") no-repeat center / contain;
-  width: 340px;
-  height: 385px;
-}
-
-.process-media .process-media-background-06 {
-  background: url("./assets/images/rps_hexa_blue.png") no-repeat center /
-    contain;
-  width: 340px;
-  height: 385px;
-}
-
-.process-media .process-media-background-07 {
-  background: url("./assets/images/rps_hexa_navy.png") no-repeat center /
-    contain;
-  width: 340px;
-  height: 385px;
-}
-
-.process-item .process-text {
-  transform: translateY(-180px);
+.timeline-block {
   text-align: center;
-}
-
-.process-item.reverse .process-text {
-  transform: translateY(180px);
-}
-
-.process-text .process-text-title {
-  text-align: center;
-  font-weight: 900;
-  font-size: 26.667px;
-  line-height: 32px;
-  color: #323f4d;
-}
-
-.process-text .process-order {
-  font-family: "Paperozi";
-  font-size: 46.667px;
-}
-
-.process-text .process-bullets li {
+  background-color: #faf8f4;
+  border-radius: 10px;
+  padding: 22px 22px 26px 16px;
+  font-size: 20px;
   font-weight: 700;
-  font-size: 22.667px;
-  line-height: 32px;
+  white-space: nowrap;
+}
+
+.timeline-time {
+  font-weight: 800;
+  font-size: 32px;
 }
