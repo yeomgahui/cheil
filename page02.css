@@ -453,6 +453,12 @@
   border-right: 1px solid #ddd;
   text-align: center;
   padding: 4px 0 4px;
+  border-collapse: collapse;
+}
+
+.table_all table td strong {
+  color: #8dc63f;
+  font-weight: 800;
 }
 
 .table_all table th:last-child,

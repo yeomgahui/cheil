@@ -138,66 +138,6 @@ ul {
   text-align: center;
 }
 
-/* REC 가중치 테이블 */
-.benefit-table {
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 24px;
-  row-gap: 16px;
-  align-items: start;
-}
-
-.rec-table {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: #fff;
-}
-
-.rec-table thead th {
-  background-color: #f7f7f7;
-  color: #323f4d;
-  text-align: left;
-  padding: 10px 14px;
-  border: 1px solid #e4e7ef;
-}
-
-/* thead 좌우 끝선 제거 */
-.rec-table thead th:first-child {
-  border-left: none;
-}
-.rec-table thead th:last-child {
-  border-right: none;
-}
-
-.rec-table tbody th,
-.rec-table tbody td {
-  padding: 10px 14px;
-  border: 1px solid #e4e7ef;
-}
-
-.rec-table tbody th {
-  white-space: nowrap;
-}
-
-.rec-table tbody th:first-child {
-  border-left: none;
-}
-.rec-table tbody td:last-child {
-  border-right: none;
-}
-
-.rec-table .highlight {
-  color: #8dc63f;
-  font-weight: 800;
-}
-
-/* 반응형: 좁은 화면에서는 세로 배치 */
-@media (max-width: 900px) {
-  .benefit-table {
-    grid-template-columns: 1fr;
-  }
-}
 
 /*  */
 
