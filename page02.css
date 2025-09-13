@@ -664,3 +664,92 @@
   font-size: 14px;
   font-weight: 400;
 }
+
+/* 1400px 이하일때 */
+@media (max-width: 1400px) {
+  .contents-wrap {
+    width: 100%;
+    padding: 16px;
+  }
+  .square-content-box .square-content-box-right .flex {
+    flex-direction: column;
+  }
+  .square-content-box .square-content-box-right .rounded-item-right {
+    margin-top: 24px;
+  }
+
+  .square-content-box-right__s_txt,
+  .square-content-box-right__s_txt-desc {
+    padding-left: 0;
+  }
+
+  .box-all {
+  }
+}
+
+/* 1200px 이하일때 */
+@media (max-width: 1200px) {
+}
+
+/* 800px 이하일때 */
+@media (max-width: 800px) {
+  .box-all {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-all .box {
+    width: 100%;
+  }
+
+  .box .table_all {
+    flex-direction: column;
+  }
+
+  .table_all table {
+    width: 100%;
+  }
+
+  .timeline-grid {
+    flex-wrap: wrap;
+  }
+
+  .process-inner-row {
+    flex-direction: column;
+  }
+
+  .process-item {
+    margin-bottom: 12px;
+  }
+
+  .flow-track {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .flow-track .flow-node {
+    width: 100%;
+  }
+
+  .flow-track .flow-node .flow-media {
+    min-height: 120px;
+  }
+
+  .flow-track .flow-node .flow-media_02 {
+    gap: 12px;
+  }
+
+  .flow-track .flow-middle {
+    margin: 0 24px;
+  }
+
+  .flow-media_02,
+  .flow-media {
+    padding-top: 25px;
+    padding-bottom: 24px;
+  }
+}
+
+/* 500px 이하일때 */
+@media (max-width: 500px) {
+}
