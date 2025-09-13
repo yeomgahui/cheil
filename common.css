@@ -66,6 +66,8 @@ ul {
   background-color: #ffffff;
   padding: 99px 250px;
   max-width: 1400px;
+
+  margin: 0 auto;
 }
 
 .info-list {

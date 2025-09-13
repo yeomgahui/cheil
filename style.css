@@ -125,15 +125,15 @@
 
 /* position-02: absolute 없이 미세 좌측 이동 */
 .feature-item.position-02 {
-  transform: translateX(-6.5px);
+  transform: translateX(-5.6px);
 }
 
 .feature-item.position-03 {
-  transform: translateX(-10.5px);
+  transform: translateX(-8.9px);
 }
 
 .feature-item.position-04 {
-  transform: translateX(-17px);
+  transform: translateX(-16px);
 }
 
 .feature-image .image-background-01 {
@@ -217,6 +217,7 @@
   font-size: 22.667px;
   /* line-height: 1.8; */
   /* letter-spacing: -0.01em; */
+
   font-weight: 900;
   color: #414143;
 }
