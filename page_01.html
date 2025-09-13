@@ -26,56 +26,102 @@
             시공사에서 선투자하여 초기 투자급 없이 태양광 사업을 통해 부가 수익
             창출이 가능한 사업입니다.
           </p>
+
+          <div class="logo">
+            <img
+              src="./assets/images/logo.png"
+              alt="태양광 팩토링 사업"
+              width="135"
+              height="30"
+            />
+          </div>
         </div>
       </section>
 
       <!-- 관계 도형 모식 -->
       <!-- flow-diagram: 페이지 관계 흐름도 -->
       <section class="flow-diagram" aria-labelledby="flow-title">
-        <h3 id="flow-title" class="visually-hidden">사업 관계 흐름도</h3>
-
         <div class="flow-canvas">
           <!-- 노드: 금융사 -->
-          <div class="node" data-node="finance">
+          <div class="node finance" data-node="finance">
+            <img
+              class="node-image"
+              src="./assets/images/cheil_money.png"
+              alt="금융사"
+            />
             <span class="node-title"
               >금융
-              <span class="SeoulHangang">社</span>
+              <span class="hanja">社</span>
             </span>
           </div>
 
-          <!-- 노드: 공사/시공 -->
-          <div class="node" data-node="construction">
-            <span class="node-title">공사/시공</span>
-          </div>
-
           <!-- 노드: 태양광 사업주 -->
-          <div class="node" data-node="owner">
+          <div class="node owner" data-node="owner">
+            <img
+              class="node-image"
+              src="./assets/images/cheil_sun.png"
+              alt="태양광 사업주"
+            />
             <span class="node-title">태양광<br />사업주</span>
           </div>
 
+          <!-- 노드: 공사/시공 -->
+          <div class="node construction" data-node="construction">
+            <img
+              class="node-image"
+              src="./assets/images/cheil_doc.png"
+              alt="공사/시공"
+            />
+            <span class="node-title">공사/시공</span>
+          </div>
+
           <!-- 노드: 지급보증사 -->
-          <div class="node" data-node="guarantee">
+          <div class="node guarantee" data-node="guarantee">
+            <img
+              class="node-image"
+              src="./assets/images/cheil_letter.png"
+              alt="지급보증사"
+            />
             <span class="node-title">
               지급보증
-              <span class="SeoulHangang">社</span>
+              <span class="hanja">社</span>
             </span>
           </div>
 
           <!-- 화살표 및 레이블 -->
-          <div class="arrow a1 arrow-prev arrow-left" aria-hidden="true">
-            <span>외상매출채권양도 승인</span>
+
+          <div>
+          
+          <div class="arrow-group approval-arrow">
+            <span class="arrow-label">외상매출채권양도 승인</span>
+            <div class="arrow arrow-left"></div>
           </div>
-          <div class="arrow a2 arrow-prev arrow-up" aria-hidden="true">
-            <span>외상매출채권 양도 <em>(준공 후)</em></span>
+          
+          <div class="arrow-group guarantee-arrow">
+            <span class="arrow-label">보증서 발급</span>
+            <div class="arrow arrow-left"></div>
           </div>
-          <div class="arrow a3 arrow-prev arrow-right" aria-hidden="true">
-            <span>보증서 발급</span>
+
+          
+          <div class="arrow-group transfer-arrow">
+            <div class="arrow arrow-up"></div>
+            <div class="horizontal"></div>
+
+            <span class="arrow-label">외상매출채권 양도
+              <br />
+              <span class="sub-label">(준공 후)</span>
+
+            </span>
           </div>
-          <div class="arrow a4 arrow-prev arrow-left" aria-hidden="true">
-            <span
-              >EPC 계약 <em>(10년 상환)</em><br />[선투자(외상매출채권
-              발생)]</span
-            >
+
+          <div class="arrow-group epc-arrow">
+            <div class="vertical"></div>
+            <div class="arrow arrow-left"></div>
+            <span class="arrow-label">EPC계약 
+              <span class="sub-label">(10년 상환)</span>
+              <br />
+              <span >[선투자(외상매출채권 발생)]</span>
+            </span>
           </div>
         </div>
       </section>
@@ -86,14 +132,13 @@
         <!-- SGI 보증 -->
         <article class="info-item">
           <header class="info-head">
-            <h4 class="info-title">
-              <span class="dot"></span>SGI서울 보증(지급보증)
-            </h4>
+            <h4 class="info-title">SGI서울 보증(지급보증)</h4>
           </header>
           <div class="info-body">
             <p class="info-desc">
               태양광 사업주에 지급보증 발행 (태양광 사업주 신용 심사)
             </p>
+
             <div class="dotted-box">
               <div class="dotted-box-badge">서울보증 심사 기준</div>
               <ul class="info-bullets">
@@ -113,7 +158,7 @@
         <!-- 태양광 사업주 -->
         <article class="info-item">
           <header class="info-head">
-            <h4 class="info-title"><span class="dot"></span>태양광 사업주</h4>
+            <h4 class="info-title">태양광 사업주</h4>
           </header>
           <div class="info-body">
             <div class="info-desc">
@@ -131,7 +176,11 @@
         <!-- 금융사 -->
         <article class="info-item">
           <header class="info-head">
-            <h4 class="info-title"><span class="dot"></span>금융社</h4>
+            <h4 class="info-title"><span class="dot"></span>금융
+              <span class="hanja">
+                社
+              </span>
+            </h4>
           </header>
           <div class="info-body">
             <div class="info-desc">
@@ -154,10 +203,14 @@
           <div class="info-body">
             <!-- feature-list: 추진 조건 카드 리스트 -->
             <div class="feature-list">
-              <div class="feature-item">
+              <!-- 01 -->
+              <div class="feature-item position-01">
                 <div class="feature-media">
-                  <div class="feature-order">1</div>
-                  <div class="feature-image">사진 영역</div>
+                  <div class="feature-order">01</div>
+                  <div class="feature-image">
+                    <div class="image-background-01"></div>
+                    <img class="image-content" src="./assets/images/fact_img1.png" alt="사업부지 소유 또는 확보"></img>
+                  </div>
                 </div>
                 <div class="feature-text">
                   <h5 class="feature-title">사업부지 소유 또는 확보</h5>
@@ -167,7 +220,8 @@
                   </p>
                 </div>
               </div>
-              <div class="feature-item">
+              <!-- 02 -->
+              <div class="feature-item reverse position-02">
                 <div class="feature-text">
                   <h5 class="feature-title">사업주 신용심사 동의</h5>
                   <p class="feature-desc">
@@ -176,14 +230,21 @@
                   </p>
                 </div>
                 <div class="feature-media">
-                  <div class="feature-image">사진 영역</div>
-                  <div class="feature-order">2</div>
+                  <div class="feature-image">
+                    <div class="image-background-02"></div>
+                    <img class="image-content" src="./assets/images/fact_img2.png" alt="사업주 신용심사 동의"></img>
+                  </div>
+                  <div class="feature-order">02</div>
                 </div>
               </div>
-              <div class="feature-item">
+              <!-- 03 -->
+              <div class="feature-item position-03">
                 <div class="feature-media">
-                  <div class="feature-order">3</div>
-                  <div class="feature-image">사진 영역</div>
+                  <div class="feature-order">03</div>
+                  <div class="feature-image">
+                    <div class="image-background-03"></div>
+                    <img class="image-content" src="./assets/images/fact_img3.png" alt="지급보증발급 동의"></img>
+                  </div>
                 </div>
                 <div class="feature-text">
                   <h5 class="feature-title">지급보증발급 동의</h5>
@@ -193,7 +254,8 @@
                   </p>
                 </div>
               </div>
-              <div class="feature-item">
+              <!-- 04 -->
+              <div class="feature-item reverse position-04">
                 <div class="feature-text">
                   <h5 class="feature-title">금융社와 팩토링 계약</h5>
                   <p class="feature-desc">
@@ -202,8 +264,11 @@
                   </p>
                 </div>
                 <div class="feature-media">
-                  <div class="feature-image">사진 영역</div>
-                  <div class="feature-order">4</div>
+                  <div class="feature-image">
+                    <div class="image-background-04"></div>
+                    <img class="image-content" src="./assets/images/fact_img4.png" alt="금융社와 팩토링 계약"></img>
+                  </div>
+                  <div class="feature-order">04</div>
                 </div>
               </div>
             </div>
@@ -241,13 +306,13 @@
                 </div>
                 <div>
                   <ol class="document-items">
-                    <li>1. 사업자 등록증</li>
-                    <li>2. 주주명부(현재기준)</li>
-                    <li>3. 법인지방세 세목별과세증명서</li>
-                    <li>4. 3년치 재무제표</li>
-                    <li>5. 대표자 지방세 세목별과세증명서</li>
-                    <li>6. 신분증</li>
-                    <li>7. 대표자 개인정보 동의(개인공인인증서)</li>
+                    <li>사업자 등록증</li>
+                    <li>주주명부(현재기준)</li>
+                    <li>법인지방세 세목별과세증명서</li>
+                    <li>3년치 재무제표</li>
+                    <li>대표자 지방세 세목별과세증명서</li>
+                    <li>신분증</li>
+                    <li>대표자 개인정보 동의(개인공인인증서)</li>
                   </ol>
                 </div>
               </div>
@@ -262,7 +327,6 @@
 
                   <div class="document-media-title">
                     <div class="document-medio-title-order">02</div>
-
                     개인사업자
                   </div>
 
@@ -270,11 +334,11 @@
                     <img src="./assets/images/cheil_02.png" alt="개인 사업자" />
                   </div>
                 </div>
-                <div>
+                <div class="document-items-box">
                   <ol class="document-items">
-                    <li>1. 신분증 사본</li>
-                    <li>2. 개인정보동의(개인공인인증서)</li>
-                    <li>3. 3년치 소득금액증명원 또는 원천징수영수증</li>
+                    <li>신분증 사본</li>
+                    <li>개인정보동의(개인공인인증서)</li>
+                    <li>3년치 소득금액증명원 또는 원천징수영수증</li>
                   </ol>
                 </div>
               </div>

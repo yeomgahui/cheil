@@ -15,29 +15,51 @@
       <h1 class="page-title">RPS 발전산업</h1>
       <!-- 박스 영역 -->
       <div class="hero">
+        <div class="hero-top-line"></div>
+
+        <div class="hero-top-line is-black"></div>
+
         <div class="hero-media">
-          <div class="hero-image">
-            <img src="./assets/images/cheil_energy.png" alt="RPS 발전산업" />
+          <div class="hero-image rps">
+            <img
+              width="134"
+              height="134"
+              src="./assets/images/cheil_energy.png"
+              alt="RPS 발전산업"
+            />
           </div>
-          <div class="hero-logo">로고</div>
+          <div class="hero-logo logo">
+            <img
+              src="./assets/images/logo.png"
+              alt="태양광 팩토링 사업"
+              width="135"
+              height="30"
+            />
+          </div>
         </div>
 
         <div class="hero-panel">
           <div class="hero-content">
-            <div class="hero-headline">RPS 발전산업</div>
-            <div class="hero-badges">
-              <div class="badge">기간한정</div>
-              <div class="badge">1Kw당 설치비 최저가격 시공</div>
+            <div class="hero-headline rps">RPS 발전산업</div>
+            <div class="hero-sub">
+              <div class="hero-sub-title rps">기간한정</div>
+              <div class="hero-sub-text">
+                1Kw당 설치비 <strong> 최저가격 시공 </strong>
+              </div>
             </div>
           </div>
           <div class="hero-description">
-            <div class="desc-title">RPS 제도란?</div>
+            <div class="desc-title rps">
+              <strong> RPS 제도 </strong>
+              란?
+            </div>
             <div class="desc-text">
               일정 규모(500MW) 이상의 공급 의무자에게 총 발전량의 일정 비율(공급
               의무량) 이상을 신재생에너지를 이용하여 공급토록 의무화한 제도
             </div>
           </div>
         </div>
+        <div class="hero-bottom-line"></div>
       </div>
 
       <!-- 리스트 영역 -->
@@ -59,14 +81,16 @@
                   <ul class="info-bullets">
                     <li>유휴 부지 사용으로 태양광 발전부지</li>
                   </ul>
-                  <div class="fw-bold fc-accent accent">비용 Zero!</div>
+                  <div class="fw-bold fc-accent benefit-highlight">
+                    비용 Zero!
+                  </div>
                 </div>
                 <div class="dotted-box-content-bottom">
                   <div class="fw-extra-bold">
                     토지 경우 토목·전용·매입비용 등 태양광 발전 시설 조성 추가
                     비용발생
                   </div>
-                  <div class="fw-bold fc-accent accent">
+                  <div class="fw-bold fc-accent benefit-highlight">
                     비용은 낮추고 수익률은 UP!
                   </div>
                 </div>
@@ -76,7 +100,55 @@
               <div class="dotted-box-badge">02. REC 가중치</div>
               <div>
                 <div>건축 시설물 이용 시 가중치 1.5배</div>
-                <div class="benefit-table">테이블영역</div>
+                <!-- REC 가중치 표 시작 -->
+                <div class="benefit-table">
+                  <table class="rec-table" aria-label="일반부지 REC 가중치 표">
+                    <thead>
+                      <tr>
+                        <th scope="col">설치유형</th>
+                        <th scope="col">세부기준</th>
+                        <th scope="col">가중치</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="rowgroup" rowspan="3">일반부지</th>
+                        <td>100KW</td>
+                        <td>1.2</td>
+                      </tr>
+                      <tr>
+                        <td>100KW ~</td>
+                        <td>1.0</td>
+                      </tr>
+                      <tr>
+                        <td>3,000KW 초과</td>
+                        <td>0.8</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <table class="rec-table" aria-label="건축물 REC 가중치 표">
+                    <thead>
+                      <tr>
+                        <th scope="col">설치유형</th>
+                        <th scope="col">세부기준</th>
+                        <th scope="col">가중치</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="rowgroup" rowspan="2">건축물</th>
+                        <td>3,000KW 이하</td>
+                        <td class="highlight">1.5</td>
+                      </tr>
+                      <tr>
+                        <td>3,000KW 초과</td>
+                        <td>1.0</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- REC 가중치 표 끝 -->
                 <div class="benefit-note">
                   ※ REC 신·재생에너지 공급 인증시 (출처 : 산업통산자원부)
                 </div>
@@ -87,25 +159,29 @@
               <div>
                 <div>허가 신청부터 준공까지 One Stop</div>
                 <div class="timeline-item">
-                  <div>ㆍ발전사업개시까지</div>
-                  <div>단, 6개월!</div>
+                  <ul class="info-bullets">
+                    <li>
+                      발전사업개시까지
+                      <strong class="fc-accent">단, 6개월!</strong>
+                    </li>
+                  </ul>
                 </div>
                 <div class="timeline-grid">
                   <div class="timeline-block">
                     <div>발전사업 허가</div>
-                    <div>3개월</div>
+                    <div class="timeline-time">3개월</div>
                   </div>
                   <div class="timeline-block">
                     <div>개발행위 허가</div>
-                    <div>1개월</div>
+                    <div class="timeline-time">1개월</div>
                   </div>
                   <div class="timeline-block">
                     <div>착공·공사 완료</div>
-                    <div>1개월</div>
+                    <div class="timeline-time">1개월</div>
                   </div>
                   <div class="timeline-block">
                     <div>사용 전 검사 준공 허가</div>
-                    <div>1개월</div>
+                    <div class="timeline-time">1개월</div>
                   </div>
                 </div>
               </div>
@@ -115,15 +191,15 @@
               <div>
                 <div class="benefit-highlight">
                   정부지원 혜택받으면
-                  <div>수익율 UP!</div>
+                  <strong class="fc-accent">수익율 UP!</strong>
                 </div>
 
                 <div class="program-title">금융지원사업</div>
-                <ul class="benefit-bullets">
-                  <li>ㆍ자금용도 : 시설자금 태양광 분야</li>
-                  <li>ㆍ대상 : 농촌형, 산업단지, 공장, 건축물 등</li>
-                  <li>ㆍ혜택1 : 시설 자금 최대 80%까지 대출</li>
-                  <li>ㆍ혜택2 : 3개월 변동 금리적용</li>
+                <ul class="info-bullets">
+                  <li>자금용도 : 시설자금 태양광 분야</li>
+                  <li>대상 : 농촌형, 산업단지, 공장, 건축물 등</li>
+                  <li>혜택1 : 시설 자금 최대 80%까지 대출</li>
+                  <li>혜택2 : 3개월 변동 금리적용</li>
                 </ul>
               </div>
             </div>
@@ -137,11 +213,13 @@
             </h4>
           </header>
           <div class="info-body">
-            한국수력원자력, 남동발전, 중부발전, 서부발전, 동서발전,
-            지역난방공사, 수자원공사, SK E&S, GS EPS, 포스코 에너지,
-            씨지앤율촌전력, 평택에너지서비스, 대륜발전, 에스파워, 동두천 <br />
-            드림파워, 파주에너지서비스, GS 동해전력, 포천민자발전, 신평택발전,
-            나라에너지서비스, 고성그린파워, 강릉에코파워
+            <div class="info-desc">
+              한국수력원자력, 남동발전, 중부발전, 서부발전, 동서발전,
+              지역난방공사, 수자원공사, SK E&S, GS EPS, 포스코 에너지,
+              씨지앤율촌전력, 평택에너지서비스, 대륜발전, 에스파워, 동두천
+              드림파워, 파주에너지서비스, GS 동해전력, 포천민자발전, 신평택발전,
+              나라에너지서비스, 고성그린파워, 강릉에코파워
+            </div>
           </div>
         </article>
         <article class="info-item">
@@ -278,25 +356,27 @@
               </div>
             </div>
 
-            <div class="revenue-box">
-              <div class="revenue-title">SMP 판매</div>
-              <ul class="revenue-bullets">
-                <li>
-                  ㆍ한국전력공사 or 전력거래소 계약 : 매월 발전량 × 전력단가로
-                  생산전력 판매 / 매월 세금계산서 발행
-                </li>
-              </ul>
-            </div>
+            <div class="dotted-box-group">
+              <div class="dotted-box">
+                <div class="dotted-box-badge">SMP 판매</div>
+                <ul class="info-bullets">
+                  <li>
+                    한국전력공사 or 전력거래소 계약 : 매월 발전량 × 전력단가로
+                    생산전력 판매 / 매월 세금계산서 발행
+                  </li>
+                </ul>
+              </div>
 
-            <div class="revenue-box">
-              <div class="revenue-title">REC 판매</div>
-              <ul class="revenue-bullets">
-                <li>ㆍ계약시장 참여 : SMP + REC [합산 고정금액]</li>
-                <li>
-                  ㆍ현물시장 참여 : 에너지관리공단 [Re100] or 전력거래소
-                  현물시장 직접 거래 [REC 보유기간 3년]
-                </li>
-              </ul>
+              <div class="dotted-box">
+                <div class="dotted-box-badge-blue">REC 판매</div>
+                <ul class="info-bullets">
+                  <li>계약시장 참여 : SMP + REC [합산 고정금액]</li>
+                  <li>
+                    현물시장 참여 : 에너지관리공단 [Re100] or 전력거래소
+                    현물시장 직접 거래 [REC 보유기간 3년]
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </article>

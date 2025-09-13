@@ -5,6 +5,7 @@ body {
   font-weight: 400;
   letter-spacing: -0.8px;
   font-size: 22.5px;
+  color: #656465;
 }
 
 h1,
@@ -14,7 +15,21 @@ h4,
 h5,
 h6 {
   font-family: "Paperozi";
-  line-height: 96px;
+  /* line-height: 96px; */
+}
+
+.hanja {
+  font-family: "SeoulHangang";
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: "ㆍ";
+  list-style-position: inside;
+}
+
+.logo img {
+  clip-path: inset(50% 0 0 0);
 }
 
 .fw-bold {
@@ -36,12 +51,12 @@ h6 {
 .grid-2x2 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px; /* 카드 간격 */
+  gap: 59px; /* 카드 간격 */
 }
 
 .container {
   background-color: #ffffff;
-  padding: 95px 250px;
+  padding: 99px 250px;
   max-width: 1400px;
 }
 
@@ -49,38 +64,43 @@ h6 {
   display: flex;
   flex-direction: column;
   gap: 50px;
-  color: #414143;
 }
 
 .info-list .info-head {
   font-weight: 800;
   font-size: 32px;
-  line-height: 40px;
+  line-height: 1.5;
 }
 
 .info-list .info-head .info-title {
   display: flex;
   align-items: center;
+  
 }
 
-.info-list .info-head .dot {
+.info-list .info-head .info-title::before {
+  content: "";
   display: inline-block;
   width: 35px;
   height: 35px;
+  padding-right: 11px;
   background: url("./assets/images/cheil_thunder.png") no-repeat center /
     contain;
-  border-radius: 0;
-  vertical-align: middle;
-  margin-right: 8px;
 }
 
 .info-list .info-body {
   font-size: 22.5px;
-  line-height: 48px;
   font-weight: 700;
+  line-height: 2.1;
+
 }
 
 .info-list .info-body .info-bullets {
+  line-height: 1.75;   
+
+}
+
+.note-list {
   list-style-type: disc;
   list-style-position: inside;
   line-height: 40px;
@@ -100,7 +120,7 @@ h6 {
 
 .dotted-box .sub-title {
   font-size: 24px;
-  line-height: 53px;
+  /* line-height: 53px; */
   font-weight: 800;
   color: #323f4d;
 }
@@ -115,24 +135,122 @@ h6 {
   background-color: #26b99a;
   color: #fff;
   padding: 0 10px;
+  min-width: 175px;
+  text-align: center;
+}
+
+/* REC 가중치 테이블 */
+.benefit-table {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 24px;
+  row-gap: 16px;
+  align-items: start;
+}
+
+.rec-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.rec-table thead th {
+  background-color: #f7f7f7;
+  color: #323f4d;
+  text-align: left;
+  padding: 10px 14px;
+  border: 1px solid #e4e7ef;
+}
+
+/* thead 좌우 끝선 제거 */
+.rec-table thead th:first-child {
+  border-left: none;
+}
+.rec-table thead th:last-child {
+  border-right: none;
+}
+
+.rec-table tbody th,
+.rec-table tbody td {
+  padding: 10px 14px;
+  border: 1px solid #e4e7ef;
+}
+
+.rec-table tbody th {
+  white-space: nowrap;
+}
+
+.rec-table tbody th:first-child {
+  border-left: none;
+}
+.rec-table tbody td:last-child {
+  border-right: none;
+}
+
+.rec-table .highlight {
+  color: #8dc63f;
+  font-weight: 800;
+}
+
+/* 반응형: 좁은 화면에서는 세로 배치 */
+@media (max-width: 900px) {
+  .benefit-table {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*  */
+
+.hero-top-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 4px;
+  background-color: #000000;
+}
+
+.hero-bottom-line {
+  position: absolute;
+  bottom: 0;
+  left: calc(100% - 30%);
+
+  width: 30%;
+  height: 4px;
+  background-color: #0eb48d;
+}
+
 .hero {
+  position: relative;
   background-color: #faf8f4;
   max-height: 325px;
-  padding: 50px 120px;
+  padding: 53px 126px 54px 135px;
   display: flex;
+  gap: 125px;
+  white-space: nowrap;
+  margin-bottom: 102px;
+}
+
+.hero-logo {
+  text-align: center;
 }
 
 .hero-image {
   border-radius: 50%;
-  width: 189px;
-  height: 189px;
-  background-color: #fff;
+  width: 197px;
+  height: 197px;
+  padding: 38px 30px 26px 34px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hero-image.rps {
+  background-color: #557cd8;
+}
+.hero-image.sun {
+  background-color: #ffffff;
 }
 
 .hero-image img {
@@ -142,6 +260,266 @@ h6 {
 }
 
 .hero-headline {
-  border-radius: 50%;
-  width: 239px;
+  font-family: "Paperozi";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 239px;
+  height: 62px;
+  padding: 17px 37px 19px 41px;
+  border-radius: 9999px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.hero-headline.rps {
+  border: 4px solid #516ece;
+  background-color: #aab7ea;
+}
+.hero-headline.sun {
+  border: 4px solid #14b68f;
+  background-color: #65ccb5;
+}
+
+.hero-content {
+  display: flex;
+  gap: 44px;
+}
+
+.hero-sub-title {
+  font-weight: 800;
+  font-size: 29.333px;
+  letter-spacing: 0.025em;
+}
+
+.hero-sub-title.rps {
+  color: #5e83f8;
+}
+
+.hero-sub-title.sun {
+  color: #26b99a;
+}
+
+.hero-sub-text {
+  font-size: 48px;
+}
+
+.hero-sub-text strong {
+  font-weight: 700;
+}
+
+.hero-description .desc-title {
+  font-size: 32px;
+  line-height: 96px;
+}
+
+.hero-description .desc-title.rps {
+  color: #5e83f8;
+}
+
+.hero-description .desc-title.sun {
+  color: #26b99a;
+}
+
+.hero-description .desc-title strong {
+  font-weight: 700;
+}
+
+.hero-description .desc-text {
+  font-size: 22.667px;
+  color: #323f4d;
+  line-height: 32px;
+}
+
+.page-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 96px;
+  color: #414143;
+}
+
+/* arrow */
+.arrow-group {
+  position: relative;
+}
+.arrow {
+  position: relative;
+  background: #0f296f;
+}
+
+.arrow::after {
+  content: "";
+  position: absolute;
+  border: solid #0f296f;
+}
+
+/* 왼쪽 화살표 */
+.arrow-left {
+  width: 500px;
+  height: 3px;
+}
+.arrow-left::after {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+  width: 10px;
+  height: 10px;
+  border-width: 0 3px 3px 0;
+}
+
+/* 위쪽 화살표 */
+.arrow-up {
+  height: 120px;
+  width: 3px;
+}
+.arrow-up::after {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(-135deg);
+  width: 10px;
+  height: 10px;
+  border-width: 0 3px 3px 0;
+}
+
+.vertical {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 3px;
+  height: 150px;
+  background: #1a2d6d;
+}
+
+.horizontal {
+  position: absolute;
+  bottom: 0;
+  width: 163px;
+  height: 3px;
+  background: #1a2d6d;
+}
+
+/* 아래쪽 화살표 */
+.arrow-down {
+  height: 120px;
+  width: 3px;
+}
+.arrow-down::after {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 10px;
+  height: 10px;
+  border-width: 0 3px 3px 0;
+}
+
+.arrow-label {
+  position: absolute;
+  color: #1c1c1c;
+  font-size: 22.667px;
+  font-weight: 700;
+  line-height: 1.4;     /* 또는 32px */
+  letter-spacing: -0.025em;
+}
+
+.approval-arrow {
+  position: absolute;
+  left: 33%;
+  top: 130px;
+  transform: translateX(-50%);
+}
+
+.approval-arrow .arrow-label {
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+.approval-arrow .arrow {
+  width: 373px;
+}
+
+.guarantee-arrow {
+  position: absolute;
+  left: 72.5%;
+  top: 130px;
+  transform: translateX(-50%);
+}
+
+.guarantee-arrow .arrow-label {
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.guarantee-arrow .arrow {
+  width: 140px;
+}
+
+.transfer-arrow {
+  position: absolute;
+  top: 280px;
+  left: 9%;
+}
+
+.transfer-arrow .arrow {
+  height: 210px;
+}
+
+.transfer-arrow .horizontal {
+  width: 160px;
+}
+
+.transfer-arrow .arrow-label {
+  top: 110%;
+  left: 80px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  text-align: center;
+}
+
+.arrow-label .sub-label {
+  color: #00ab84;
+}
+
+.epc-arrow {
+  position: absolute;
+  top: 480px;
+  left: 43%;
+}
+
+.epc-arrow .vertical {
+  height: 190px;
+  top: -187px;
+}
+
+.epc-arrow .arrow-label {
+  left: 100px;
+  top: 20px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  text-align: center;
+}
+
+.epc-arrow .arrow {
+  width: 205px;
+}
+
+.epc-arrow .vertical {
+
+/* 1600px 이하일때 */
+@media (max-width: 1600px) {
+}
+
+/* 1400px 이하일때 */
+@media (max-width: 1400px) {
+}
+
+/* 1200px 이하일때 */
+@media (max-width: 1200px) {
+}
+
+/* 1500px 이하일때 */
+@media (max-width: 500px) {
 }
