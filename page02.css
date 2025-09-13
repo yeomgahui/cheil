@@ -399,11 +399,6 @@
   margin-top: 0;
 }
 
-/* 하단 영역 하여백 제거로 박스 하단과 밀착 */
-.box .box-detail-01_bottom {
-  padding-bottom: 0;
-}
-
 .timeline-grid {
   display: flex;
   gap: 12px;
