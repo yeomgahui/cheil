@@ -389,3 +389,325 @@
   font-weight: 800;
   font-size: 32px;
 }
+
+.process {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.process-item {
+  margin-top: 0;
+  position: relative;
+}
+
+.process-item .process-media .process-media-image {
+  position: absolute;
+  left: 50%;
+  top: 19%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
+
+.process-item.item-05 .process-media .process-media-image {
+  position: absolute;
+  left: 47%;
+  top: 17%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
+
+.process-item.item-06 .process-media .process-media-image {
+  position: absolute;
+  left: 47%;
+  top: 17%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
+
+/* .process-item.reverse .process-media .process-media-image {
+  position: absolute;
+  left: 50%;
+  top: 62%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+} */
+
+.process-item.reverse.item-02 .process-media .process-media-image {
+  position: absolute;
+  left: 50%;
+  top: 73%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
+
+.process-item.reverse.item-04 .process-media .process-media-image {
+  position: absolute;
+  left: 50%;
+  top: 83%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
+
+.process-item.reverse.item-06 .process-media .process-media-image {
+  position: absolute;
+  left: 50%;
+  top: 84%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
+
+.process-inner-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.process-media .process-media-background-01 {
+  background: url("./assets/images/rps_hexa_sky.png") no-repeat center / contain;
+  width: 340px;
+  height: 385px;
+}
+
+.process-media .process-media-background-02 {
+  background: url("./assets/images/rps_hexa_blue.png") no-repeat center /
+    contain;
+  width: 340px;
+  height: 385px;
+}
+
+.process-media .process-media-background-03 {
+  background: url("./assets/images/rps_hexa_sky.png") no-repeat center / contain;
+  width: 340px;
+  height: 385px;
+}
+
+.process-item.item-02 {
+  transform: translateX(-7px) translateY(-115px);
+}
+
+.process-item.item-03 {
+  transform: translateX(-19px) translateY(7px);
+}
+
+.process-item.item-04 {
+  transform: translateX(-25px) translateY(-115px);
+}
+
+.process-item.item-06 {
+  transform: translateX(-12px) translateY(-115px);
+}
+
+.process-item.item-07 {
+  transform: translateX(-17px) translateY(35px);
+}
+
+.process-media .process-media-background-04 {
+  background: url("./assets/images/rps_hexa_navy.png") no-repeat center /
+    contain;
+  width: 340px;
+  height: 385px;
+}
+
+.process-media .process-media-background-05 {
+  background: url("./assets/images/rps_hexa_sky.png") no-repeat center / contain;
+  width: 340px;
+  height: 385px;
+}
+
+.process-media .process-media-background-06 {
+  background: url("./assets/images/rps_hexa_blue.png") no-repeat center /
+    contain;
+  width: 340px;
+  height: 385px;
+}
+
+.process-media .process-media-background-07 {
+  background: url("./assets/images/rps_hexa_navy.png") no-repeat center /
+    contain;
+  width: 340px;
+  height: 385px;
+}
+
+.process-item .process-text {
+  transform: translateY(-180px);
+  text-align: center;
+}
+
+.process-item.reverse .process-text {
+  transform: translateY(180px);
+}
+
+.process-text .process-text-title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 26.667px;
+  line-height: 32px;
+  color: #323f4d;
+}
+
+.process-text .process-order {
+  font-family: "Paperozi";
+  font-size: 46.667px;
+}
+
+.process-text .process-bullets li {
+  font-weight: 700;
+  font-size: 22.667px;
+  line-height: 32px;
+}
+
+.revenue-flow .flow-node {
+  border: 2px dotted #26b99a;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.revenue-flow .flow-media {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+  align-content: center;
+  padding: 0 24px 0;
+}
+
+.revenue-flow .flow-media_02 {
+  flex: 1;
+  display: flex;
+  min-height: 240px;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  justify-content: center;
+}
+
+.revenue-flow .flow-node {
+  flex: 1;
+}
+
+.revenue-flow .flow-node .flow-label {
+  width: 100%;
+  text-align: center;
+  background-color: #faf8f4;
+  font-weight: 700;
+  font-size: 22.667px;
+}
+
+.flow-arrow {
+  position: relative;
+}
+
+.revenue-flow {
+  margin-top: 26px;
+}
+.revenue-flow .flow-track {
+  display: flex;
+  margin-bottom: 141px;
+}
+
+.revenue-flow .flow-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* 좌우 화살표 블록 개별 수직 위치 조정 */
+.revenue-flow .flow-arrow.rec {
+  padding-left: 20px;
+  transform: translateY(-90px);
+}
+
+.revenue-flow .flow-arrow.smp {
+  padding-right: 20px;
+  transform: translateY(90px);
+}
+
+.revenue-flow .flow-arrow-circle-rec {
+  background-color: #557cd8;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 22.667px;
+  padding: 9px;
+  font-weight: 800;
+}
+
+.revenue-flow .flow-arrow-circle-smp {
+  background-color: #00ab84;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 22.667px;
+  padding: 9px;
+  font-weight: 800;
+}
+
+.revenue-flow .flow-arrow-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 60px;
+}
+
+.revenue-flow .flow-arrow-image {
+  width: 120px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.flow-middle {
+  position: relative;
+}
+
+.revenue-flow .flow-arrow-circle-rec {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.revenue-flow .flow-arrow-circle-smp {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.revenue-flow .flow-arrow-image.flip {
+  transform: scaleX(-1);
+}
+
+.revenue-flow .flow-arrow .flow-arrow-text-top,
+.revenue-flow .flow-arrow .flow-arrow-text-bottom,
+.revenue-flow .flow-arrow span {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  color: #414143;
+}
+
+.revenue-flow .flow-middle-media img {
+  width: 360px;
+  height: auto;
+  object-fit: contain;
+}
