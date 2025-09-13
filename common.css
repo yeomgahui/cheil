@@ -283,6 +283,7 @@ ul {
 .hero-content {
   display: flex;
   gap: 44px;
+  margin-bottom: 32px;
 }
 
 .hero-sub-title {
@@ -310,7 +311,9 @@ ul {
   font-weight: 700;
 }
 
-
+.hero-description {
+  padding-left: 50px;
+}
 
 .hero-description .desc-title {
   font-size: 32px;
