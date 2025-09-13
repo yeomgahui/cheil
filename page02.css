@@ -597,10 +597,10 @@
   --tx: -3px;
 }
 .process-inner-row > .process-item:nth-child(3) {
-  --tx: -4.5px;
+  --tx: -6px;
 }
 .process-inner-row > .process-item:nth-child(4) {
-  --tx: -5.5px;
+  --tx: -9px;
 }
 
 .process-item .process-item-content {
