@@ -23,6 +23,10 @@ h6 {
   font-weight: 400;
 }
 
+.pl-35 {
+  padding-left: 35px;
+}
+
 ul {
   list-style-type: "ㆍ";
   list-style-position: inside;
@@ -147,6 +151,7 @@ ul {
   column-gap: 24px;
   row-gap: 16px;
   align-items: start;
+  margin-bottom: 19px;
 }
 
 .rec-table {

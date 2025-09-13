@@ -279,14 +279,27 @@
 }
 
 /* page_02 */
+
+.rsp-benefit .sub-title {
+  font-size: 24px;
+}
+
+.rsp-benefit .benefit-note {
+  color: #414143;
+}
 .rsp-benefit-01,
 .rsp-benefit-02,
 .rsp-benefit-03,
 .rsp-benefit-04 {
-  padding: 0 !important;
-  height: 254px;
+  padding: 0 15px !important;
+  min-height: 254px;
+  height: auto;
   width: 669px;
-  white-space: nowrap;
+  white-space: normal;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  display: flex;
+  flex-direction: column;
 }
 
 .rsp-benefit-01 .dotted-box-content-top {
@@ -296,7 +309,21 @@
 .rsp-benefit-01 .dotted-box-content-bottom {
   padding: 25px 86px 37px 55px;
   background-color: #faf8f4;
-  height: 100%;
+  height: auto;
+  margin-top: auto;
+}
+
+/* dotted-box 내부 레이아웃: 상단/하단 블록 분리 및 하단 고정 */
+.rsp-benefit-01 .dotted-box-content {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  min-height: 100%;
+}
+
+.rsp-benefit-01 .dotted-box-content-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .rsp-benefit-01 .benefit-highlight {
@@ -331,16 +358,31 @@
   display: flex;
   flex-direction: row;
   gap: 25px;
+  flex-wrap: wrap;
+}
+
+.timeline-item {
+  margin-bottom: 26px;
 }
 
 .timeline-block {
+  position: relative;
   text-align: center;
   background-color: #faf8f4;
   border-radius: 10px;
   padding: 22px 22px 26px 16px;
   font-size: 20px;
   font-weight: 700;
-  white-space: nowrap;
+  white-space: normal;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  min-width: 0;
+}
+
+.timeline-icon {
+  position: absolute;
+  right: 8px;
+  top: 25px;
 }
 
 .timeline-time {
