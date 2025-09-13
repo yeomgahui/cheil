@@ -719,7 +719,8 @@
   }
 
   .square-content-box-right__s_txt,
-  .square-content-box-right__s_txt-desc {
+  .square-content-box-right__s_txt-desc,
+  .square-content-box-right__s-txt {
     padding-left: 0;
   }
 
