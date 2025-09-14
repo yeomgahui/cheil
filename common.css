@@ -59,19 +59,3 @@ ul {
   line-height: 96px;
   color: #414143;
 }
-
-/* 1600px 이하일때 */
-@media (max-width: 1600px) {
-}
-
-/* 1400px 이하일때 */
-@media (max-width: 1400px) {
-}
-
-/* 1200px 이하일때 */
-@media (max-width: 1200px) {
-}
-
-/* 1500px 이하일때 */
-@media (max-width: 500px) {
-}
