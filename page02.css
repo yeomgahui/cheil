@@ -827,8 +827,15 @@
     flex-wrap: wrap;
   }
 
-  .process-inner-row {
+  .process {
     flex-direction: column;
+  }
+
+  .process-inner-row {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
   }
 
   .process-item.reverse {
